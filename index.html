@@ -3,59 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-
+    <title>Fast Food Website</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-      <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
-          </a>
-        </div>
-      </nav>
-
+    <script src="main.js" defer></script>
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#video-section">Home</a></li>
+            <li><a href="#menu-section">Menu</a></li>
+            <li><a href="#locations-section">Locations</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section 1: Video and Welcome Text -->
+    <section id="video-section" class="section">
+        <div class="video-container">
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="welcome-text">
+            <h1>Welcome to Our Fast Food Place</h1>
+            <p>Edit this text to describe your restaurant.</p>
+        </div>
+    </section>
+
+    <!-- Section 2: Menu -->
+    <div class="menu-section">
+      <h2>Our Menu</h2>
+      <div class="menu-tabs">
+          <button class="tab-button" data-category="burgers">Burgers</button>
+          <button class="tab-button" data-category="pizzas">Pizzas</button>
+          <button class="tab-button" data-category="salads">Salads</button>
+          <button class="tab-button" data-category="chicken">Chicken</button>
+      </div>
+      <div class="menu-content" id="burgers">
+        <div class="menu-item" data-name="Burger 1" data-price="5">
+            <img src="burger1.jpg" alt="Burger 1">
+            <p>Burger 1</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Burger 2" data-price="6">
+            <img src="burger2.jpg" alt="Burger 2">
+            <p>Burger 2</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Burger 3" data-price="7">
+            <img src="burger3.jpg" alt="Burger 3">
+            <p>Burger 3</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Burger 4" data-price="8">
+            <img src="burger4.jpg" alt="Burger 4">
+            <p>Burger 4</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
     
+    <div class="menu-content" id="pizzas" style="display: none;">
+        <div class="menu-item" data-name="Pizza 1" data-price="8">
+            <img src="pizza1.jpg" alt="Pizza 1">
+            <p>Pizza 1</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Pizza 2" data-price="9">
+            <img src="pizza2.jpg" alt="Pizza 2">
+            <p>Pizza 2</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Pizza 3" data-price="10">
+            <img src="pizza3.jpg" alt="Pizza 3">
+            <p>Pizza 3</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Pizza 4" data-price="11">
+            <img src="pizza4.jpg" alt="Pizza 4">
+            <p>Pizza 4</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div class="menu-content" id="salads" style="display: none;">
+        <div class="menu-item" data-name="Salad 1" data-price="4">
+            <img src="salad1.jpg" alt="Salad 1">
+            <p>Salad 1</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Salad 2" data-price="5">
+            <img src="salad2.jpg" alt="Salad 2">
+            <p>Salad 2</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Salad 3" data-price="6">
+            <img src="salad3.jpg" alt="Salad 3">
+            <p>Salad 3</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    
+    <div class="menu-content" id="chickens" style="display: none;">
+        <div class="menu-item" data-name="Chicken 1" data-price="9">
+            <img src="chicken1.jpg" alt="Chicken 1">
+            <p>Chicken 1</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Chicken 2" data-price="10">
+            <img src="chicken2.jpg" alt="Chicken 2">
+            <p>Chicken 2</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item" data-name="Chicken 3" data-price="11">
+            <img src="chicken3.jpg" alt="Chicken 3">
+            <p>Chicken 3</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    
+    
+    <!-- Cart Section -->
+    <div class="cart">
+        <h3>Cart</h3>
+        <ul id="cart-items"></ul>
+        <button id="order-button">Order</button>
+    </div>
+    
+
+    <!-- Section 3: Locations -->
+    <section id="locations-section" class="section">
+        <h2>Our Locations</h2>
+        <div class="locations-grid">
+            <img src="location1.jpg" alt="Location 1">
+            <img src="location2.jpg" alt="Location 2">
+            <img src="location3.jpg" alt="Location 3">
+            <img src="location4.jpg" alt="Location 4">
+            <img src="location5.jpg" alt="Location 5">
+            <img src="location6.jpg" alt="Location 6">
+        </div>
+    </section>
+
+    <!-- Section 4: Footer -->
+    <footer id="footer">
+        <h2>Follow Us</h2>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Snapchat</a>
+            <a href="#">Facebook</a>
+        </div>
+        <div class="contact-info">
+            <p>Contact us: +123 456 789</p>
+            <p>Name for Order: John Doe</p>
+        </div>
+    </footer>
 </body>
 </html>
