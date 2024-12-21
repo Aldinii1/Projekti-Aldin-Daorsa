@@ -6,10 +6,11 @@
     <title>Fast Food Website</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="main.js" defer></script>
+    <script src="main.js" ></script>
 </head>
 <body>
     <nav class="navbar">
+        <div class="logo"></div>
         <ul>
             <li><a href="#video-section">Home</a></li>
             <li><a href="#menu-section">Menu</a></li>
@@ -18,7 +19,6 @@
         </ul>
     </nav>
 
-    <!-- Section 1: Video and Welcome Text -->
     <section id="video-section" class="section">
         <div class="video-container">
             <iframe src="" frameborder="0" allowfullscreen></iframe>
@@ -29,14 +29,12 @@
         </div>
     </section>
 
-    <!-- Section 2: Menu -->
     <div class="menu-section">
       <h2>Our Menu</h2>
       <div class="menu-tabs">
           <button class="tab-button" data-category="burgers">Burgers</button>
-          <button class="tab-button" data-category="pizzas">Pizzas</button>
-          <button class="tab-button" data-category="salads">Salads</button>
-          <button class="tab-button" data-category="chicken">Chicken</button>
+          <button class="tab-button" data-category="sandwiches">Sandwiches</button>
+          <button class="tab-button" data-category="chickens">Chicken</button>
       </div>
       <div class="menu-content" id="burgers">
         <div class="menu-item" data-name="Burger 1" data-price="5">
@@ -54,66 +52,38 @@
             <p>Burger 3</p>
             <button class="add-to-cart">Add to Cart</button>
         </div>
-        <div class="menu-item" data-name="Burger 4" data-price="8">
-            <img src="burger4.jpg" alt="Burger 4">
-            <p>Burger 4</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
     </div>
     
-    <div class="menu-content" id="pizzas" style="display: none;">
-        <div class="menu-item" data-name="Pizza 1" data-price="8">
-            <img src="pizza1.jpg" alt="Pizza 1">
-            <p>Pizza 1</p>
+    <div class="menu-content" id="sandwiches" style="display: none;">
+        <div class="menu-item" data-name="Sandwich 1" data-price="2">
+            <img src="sandwich1.jpg" alt="Sandwich 1">
+            <p>Sandwich 1</p>
             <button class="add-to-cart">Add to Cart</button>
         </div>
-        <div class="menu-item" data-name="Pizza 2" data-price="9">
-            <img src="pizza2.jpg" alt="Pizza 2">
-            <p>Pizza 2</p>
+        <div class="menu-item" data-name="Sandwich 2" data-price="2.50">
+            <img src="sandwich2.jpg" alt="Sandwich 2">
+            <p>Sandwich 2</p>
             <button class="add-to-cart">Add to Cart</button>
         </div>
-        <div class="menu-item" data-name="Pizza 3" data-price="10">
-            <img src="pizza3.jpg" alt="Pizza 3">
-            <p>Pizza 3</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="menu-item" data-name="Pizza 4" data-price="11">
-            <img src="pizza4.jpg" alt="Pizza 4">
-            <p>Pizza 4</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-    </div>
-    
-    <div class="menu-content" id="salads" style="display: none;">
-        <div class="menu-item" data-name="Salad 1" data-price="4">
-            <img src="salad1.jpg" alt="Salad 1">
-            <p>Salad 1</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="menu-item" data-name="Salad 2" data-price="5">
-            <img src="salad2.jpg" alt="Salad 2">
-            <p>Salad 2</p>
-            <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="menu-item" data-name="Salad 3" data-price="6">
-            <img src="salad3.jpg" alt="Salad 3">
-            <p>Salad 3</p>
+        <div class="menu-item" data-name="Sandwich 3" data-price="3">
+            <img src="sandwich3.jpg" alt="Sandwich 3">
+            <p>Sandwich 3</p>
             <button class="add-to-cart">Add to Cart</button>
         </div>
     </div>
     
     <div class="menu-content" id="chickens" style="display: none;">
-        <div class="menu-item" data-name="Chicken 1" data-price="9">
+        <div class="menu-item" data-name="Chicken 1" data-price="3">
             <img src="chicken1.jpg" alt="Chicken 1">
             <p>Chicken 1</p>
             <button class="add-to-cart">Add to Cart</button>
         </div>
-        <div class="menu-item" data-name="Chicken 2" data-price="10">
+        <div class="menu-item" data-name="Chicken 2" data-price="5">
             <img src="chicken2.jpg" alt="Chicken 2">
             <p>Chicken 2</p>
             <button class="add-to-cart">Add to Cart</button>
         </div>
-        <div class="menu-item" data-name="Chicken 3" data-price="11">
+        <div class="menu-item" data-name="Chicken 3" data-price="8">
             <img src="chicken3.jpg" alt="Chicken 3">
             <p>Chicken 3</p>
             <button class="add-to-cart">Add to Cart</button>
@@ -121,15 +91,12 @@
     </div>
     
     
-    <!-- Cart Section -->
     <div class="cart">
         <h3>Cart</h3>
         <ul id="cart-items"></ul>
         <button id="order-button">Order</button>
     </div>
-    
 
-    <!-- Section 3: Locations -->
     <section id="locations-section" class="section">
         <h2>Our Locations</h2>
         <div class="locations-grid">
@@ -142,17 +109,19 @@
         </div>
     </section>
 
-    <!-- Section 4: Footer -->
     <footer id="footer">
         <h2>Follow Us</h2>
         <div class="social-links">
             <a href="#">Instagram</a>
             <a href="#">Snapchat</a>
             <a href="#">Facebook</a>
+            <br><br><br>
         </div>
         <div class="contact-info">
-            <p>Contact us: +123 456 789</p>
-            <p>Name for Order: John Doe</p>
+           A&Dburgers@gmail.com
+
+           Copyright 2024 ©
+           
         </div>
     </footer>
 </body>
