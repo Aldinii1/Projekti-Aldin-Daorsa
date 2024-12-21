@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  ;
 }
 
 .navbar {
@@ -48,19 +49,25 @@ body {
 }
 
 .video-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto 20px;
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  
 }
 
 .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 450px;
+  height: 100%;
+  border: none;
 }
+
 
 .welcome-text {
   text-align: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .menu-section {
@@ -161,7 +168,7 @@ body {
 
 .locations-grid img {
   width: 100%;
-  height: 150px;
+  height: 250px;
   object-fit: cover;
   border-radius: 5px;
   border: 1px solid #ddd;
