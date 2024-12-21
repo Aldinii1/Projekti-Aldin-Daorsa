@@ -1,15 +1,19 @@
 body{
-    background-color: #F0FFFF;
-
+    background-color: #D3D3D3;
+   position: center;
+   
 }
 
 
-
+.menu-tabs{
+  align-items: baseline;
+  
+}
 
 .menu-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #F0FFFF;
+    background-color: #d3d3d3;
   }
   
   .menu-category {
@@ -22,13 +26,13 @@ body{
   }
   
   .menu-item {
-    display: -moz-inline-box;
-    margin: 100px;
+    display: inline-block;
+    margin: 40px;
     border: 1px solid #ddd;
     border-radius: 5px;
     overflow: hidden;
-    width: 500px;
-    height: 300px;
+    width: 350px;
+    height: 290px;
     text-align: center;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -37,6 +41,7 @@ body{
   .menu-item img {
     width: 100%;
     height: 200px;
+    position left: ;
     object-fit: cover;
   }
   
