@@ -11,16 +11,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
-            <a class="navbar-brand fw-bold text-glow" href="#">A&D <span class="text-warning">PG</span></a>
+            <a class="navbar-brand fw-bold text-glow" href="#">A&D <span class="text-warning"></span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
                     <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
@@ -33,19 +32,15 @@
     </nav>
 
 
-   <!-- Slideshow Section -->
 <section id="slideshow">
     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators -->
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
 
-        <!-- Slideshow Content -->
         <div class="carousel-inner">
-            <!-- Slide 1 -->
             <div class="carousel-item active">
                 <img src="Menu.webp" class="d-block w-100" alt="Slide 1">
                 <div class="carousel-caption d-none d-md-block">
@@ -54,7 +49,6 @@
                 </div>
             </div>
 
-            <!-- Slide 2 -->
             <div class="carousel-item">
                 <img src="Menu 2.webp" class="d-block w-100" alt="Slide 2">
                 <div class="carousel-caption d-none d-md-block">
@@ -63,7 +57,6 @@
                 </div>
             </div>
 
-            <!-- Slide 3 -->
             <div class="carousel-item">
                 <img src="images/slide3.jpg" class="d-block w-100" alt="Slide 3">
                 <div class="carousel-caption d-none d-md-block">
@@ -73,7 +66,6 @@
             </div>
         </div>
 
-        <!-- Controls -->
         <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -86,23 +78,21 @@
 </section>
 
 
-    <!-- Hero Section -->
 <header class="hero text-center text-white position-relative">
     <div id="particles-js"></div>
     <div class="container hero-content animate__animated animate__fadeInDown">
         <h1 class="display-4 fw-bold text-glow">A&D</h1>
         <p class="lead">Një eksperiencë e jashtëzakonshme e shijes dhe luksit. Provoje ushqimin si kurrë më parë.</p>
-        <a href="#about" class="btn btn-warning btn-lg mt-3 shadow">Mëso më shumë</a>
+        <a href="AboutUs.html" class="btn btn-warning btn-lg mt-3 shadow">Mëso më shumë</a>
     </div>
 </header>
 
 
-   <!-- About Section -->
 <section id="about" class="py-5 bg-warning">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 text-center mb-4">
-                <img src="https://via.placeholder.com/400" alt="Rreth Nesh" class="img-fluid rounded shadow">
+                <img src="A&D LOGO.webp" alt="Rreth Nesh" class="img-fluid rounded shadow">
             </div>
             <div class="col-md-6">
                 <h2 class="fw-bold">RRETH A&D</h2>
@@ -118,7 +108,6 @@
 </section>
 
 
-    <!-- Menu Section -->
 <section id="menu" class="py-5">
     <div class="container text-center">
         <h2 class="fw-bold mb-4">MENYJA JONË</h2>
@@ -180,24 +169,23 @@
 </section>
 
 
-    <!-- Events Section -->
     <section id="events" class="py-5 bg-light">
         <div class="container">
             <h2 class="fw-bold text-center mb-4">UPCOMING EVENTS</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="event-card shadow-sm">
-                        <h5 class="fw-bold">Wine Tasting Night</h5>
+                        <h5 class="fw-bold">Hapja e Restauranit</h5>
                         <p class="text-muted">April 15th, 2025</p>
-                        <p>Join us for an exclusive evening of wine tasting paired with gourmet dishes.</p>
+                        <p>Join us to celebrate the opening of the A&D restaurant</p>
                         <button class="btn btn-warning btn-sm">Reserve Now</button>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="event-card shadow-sm">
-                        <h5 class="fw-bold">BBQ Experience</h5>
+                        <h5 class="fw-bold">BBQ Only </h5>
                         <p class="text-muted">May 10th, 2025</p>
-                        <p>Discover the art of BBQ with live cooking demonstrations.</p>
+                        <p>Bashkohunim me ne per 10 maj 2025 per te shfaqur BBQ Day .</p>
                         <button class="btn btn-warning btn-sm">Reserve Now</button>
                     </div>
                 </div>
@@ -213,21 +201,19 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery" class="py-5 bg-dark text-white">
         <div class="container">
             <h2 class="fw-bold text-center mb-4">PHOTO GALLERY</h2>
             <div class="row g-3">
-                <div class="col-md-3"><img src="https://via.placeholder.com/300" class="img-fluid rounded"></div>
-                <div class="col-md-3"><img src="https://via.placeholder.com/300" class="img-fluid rounded"></div>
-                <div class="col-md-3"><img src="https://via.placeholder.com/300" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="Burger yu.webp" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="sandwich.webp" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="chicken.webp" class="img-fluid rounded"></div>
                 <div class="col-md-3"><img src="https://via.placeholder.com/300" class="img-fluid rounded"></div>
             </div>
         </div>
     </section>
 
 
-        <!-- Our Team Section -->
         <section id="team" class="py-5">
             <div class="container text-center">
                 <h2 class="fw-bold mb-4">MEET THE TEAM</h2>
@@ -236,7 +222,7 @@
                         <div class="card shadow team-card">
                             <img src="https://via.placeholder.com/300" class="card-img-top" alt="Chef">
                             <div class="card-body">
-                                <h5 class="card-title">Chef Rob Sonderman</h5>
+                                <h5 class="card-title">Emin Haziri</h5>
                                 <p class="card-text">Master Chef & Pitmaster</p>
                                 <div class="social-icons">
                                     <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
@@ -250,7 +236,7 @@
                         <div class="card shadow team-card">
                             <img src="https://via.placeholder.com/300" class="card-img-top" alt="Sous Chef">
                             <div class="card-body">
-                                <h5 class="card-title">Chef Jamie Lynn</h5>
+                                <h5 class="card-title">Liman Veliu</h5>
                                 <p class="card-text">Sous Chef & Culinary Artist</p>
                                 <div class="social-icons">
                                     <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
@@ -264,7 +250,7 @@
                         <div class="card shadow team-card">
                             <img src="https://via.placeholder.com/300" class="card-img-top" alt="Manager">
                             <div class="card-body">
-                                <h5 class="card-title">Manager Alex Powers</h5>
+                                <h5 class="card-title">Besmir Kraja</h5>
                                 <p class="card-text">Event Coordinator & Manager</p>
                                 <div class="social-icons">
                                     <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
@@ -278,24 +264,22 @@
             </div>
         </section>
 
-            <!-- Newsletter Section -->
     <section id="newsletter" class="py-5 bg-warning">
         <div class="container text-center">
-            <h2 class="fw-bold mb-4">SUBSCRIBE TO OUR NEWSLETTER</h2>
+            <h2 class="fw-bold mb-4">Na kontaktoni Per Idea te Ushqimeve!</h2>
             <form class="newsletter-form">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <input type="email" class="form-control mb-3" placeholder="Enter your email" required>
                     </div>
                     <div class="col-md-2">
-                        <button type="submit" class="btn btn-dark btn-lg shadow">Subscribe</button>
+                        <button type="submit" class="btn btn-dark btn-lg shadow">Dergo</button>
                     </div>
                 </div>
             </form>
         </div>
     </section>
 
-        <!-- Footer -->
         <footer class="bg-dark text-white py-5">
             <div class="container">
                 <div class="row">
