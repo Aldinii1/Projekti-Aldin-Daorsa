@@ -1,0 +1,60 @@
+.team-card img {
+    border-radius: 50%;
+    width: 150px;
+    margin: auto;
+}
+
+.team-card .social-icons a {
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.team-card .social-icons a:hover {
+    color: #f5d300;
+    transform: scale(1.1);
+}
+
+
+.newsletter-form input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    background: #333;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #f5d300;
+    color: #000;
+}
+
+
+#slideshow .carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#slideshow .carousel-caption {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    animation: 2s ease-in-out;
+}
+
+.text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Slide Animations */
+.carousel-item {
+    transition:  1.5s ease,  1.5s ease-in-out;
+}
+
+.carousel-item img {
+    filter: brightness(0.85);
+}
