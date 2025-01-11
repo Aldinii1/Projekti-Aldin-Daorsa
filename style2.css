@@ -1,16 +1,14 @@
-/* General body styling */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-image: url(cheese.avif);
 }
 
-/* About Us Section */
 #about-us {
     background-color: #f4f4f9;
     padding: 60px 20px;
     text-align: left;
-    min-height: 70vh; /* Ensure this section takes a large space */
+    min-height: 70vh;
 }
 
 #about-us .content {
@@ -32,12 +30,33 @@ body {
     margin-bottom: 20px;
 }
 
-/* Footer Section */
+
+.top-left-button {
+    position: fixed; 
+    top: 20px; 
+    left: 20px; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    font-size: 24px; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    text-decoration: none; 
+    transition: background-color 0.3s ease
+}
+
+.top-left-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+.top-left-button i {
+    font-size: 28px; 
+}
+
+
 #footer {
     background-color: #232323;
     color: #fff;
     padding: 40px 20px;
-    border-top: 5px solid #ffcc00; /* Yellow top border */
+    border-top: 5px solid #ffcc00;
     text-align: center;
 }
 
@@ -96,7 +115,7 @@ body {
     color: #ffcc00;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -107,3 +126,4 @@ body {
         margin: 10px 0;
     }
 }
+

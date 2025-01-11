@@ -50,7 +50,6 @@
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
 }
 
-/* Slide Animations */
 .carousel-item {
     transition:  1.5s ease,  1.5s ease-in-out;
 }
