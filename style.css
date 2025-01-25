@@ -1,8 +1,11 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
+
+   background-image: url('background.jpg'); 
+   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; 
 }
 
 .navbar {
@@ -10,7 +13,7 @@ body {
     top: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.8);
-    padding: 10px 0;
+    padding: 20px 0;
     z-index: 1000;
     display: flex;
     justify-content: center;
@@ -21,12 +24,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    gap: 110px;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #fdfdfd;
     font-size: 16px;
     font-weight: bold;
     transition: 0.3s;
@@ -65,16 +68,43 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 
+.menu-card {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+}
+
+.menu-card:hover {
+    transform: scale(1.05); 
+}
+
+
 .event-card {
-    background: #fff;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
+
+.reserve-btn, #contactForm button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition:  0.3s ease,  0.2s ease;
+}
+
+.reserve-btn:hover, #contactForm button:hover {
+    transform: scale(1.05);
+}
+
+
 
 form input, form textarea {
     border-radius: 5px;

@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10;
+    padding: 220;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
+  .navbar {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-header {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .menu-tab {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .menu-tab:hover {
+    background-color: #ffcc33;
+  }
+  
+  #menu-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+  }
+  
+  .food-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px;
+  }
+  
+  .food-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .food-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .food-item .content {
+    padding: 15px;
+  }
+  
+  .food-item button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .food-item button:hover {
+    background-color: #218838;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .notification {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
+    z-index: 2000;
+  }
+  

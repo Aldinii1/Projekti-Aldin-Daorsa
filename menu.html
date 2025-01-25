@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#menu-section">Menu</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#cart-btn" onclick="openCart()">Cart</a></li>
+    </ul>
+  </nav>
+
+  <section id="menu-section">
+    <div class="menu-header">
+      <button class="menu-tab" onclick="showCategory('burger')">Burgers</button>
+      <button class="menu-tab" onclick="showCategory('meat')">Meats</button>
+      <button class="menu-tab" onclick="showCategory('salads')">Salads</button>
+      <button class="menu-tab" onclick="showCategory('desserts')">Desserts</button>
+      <button class="menu-tab" onclick="showCategory('drinks')">Drinks</button>
+    </div>
+
+    <div id="menu-content">
+      <div class="category burger">
+        <div class="food-item">
+          <img src="Classic Burger.webp" alt="Classic Burger">
+          <div class="content">
+            <h3>Classic Burger</h3>
+            <p>Juicy beef, lettuce, cheese</p>
+            <p>Price: $5</p>
+            <button onclick="addToCart('Classic Burger', 5)">Order Now</button>
+          </div>
+        </div>
+        <div class="food-item">
+          <img src="Cheese burger.jpg" alt="Cheese Burger">
+          <div class="content">
+            <h3>Cheese Burger</h3>
+            <p>Beef, cheese, pickles</p>
+            <p>Price: $6</p>
+            <button onclick="addToCart('Cheese Burger', 6)">Order Now</button>
+          </div>
+        </div>
+        <div class="food-item">
+          <img src="Double Burger.jpg" alt="Double Burger">
+          <div class="content">
+            <h3>Double Burger</h3>
+            <p>Double beef, extra cheese</p>
+            <p>Price: $7</p>
+            <button onclick="addToCart('Double Burger', 7)">Order Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="notification" class="notification hidden"></div>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeCart()">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <button onclick="openOrderForm()">Proceed to Order</button>
+    </div>
+  </div>
+
+  <!-- Order Form Modal -->
+  <div id="order-form-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeOrderForm()">&times;</span>
+      <h2>Complete Your Order</h2>
+      <form id="order-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+        <textarea id="address" placeholder="Your Address" required></textarea>
+        <button type="submit">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>

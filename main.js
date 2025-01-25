@@ -1,22 +1,24 @@
-document.querySelectorAll('.reserve-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const date = prompt('Enter your reservation date (YYYY-MM-DD):');
-        if (date) {
-            alert(`Your reservation for ${date} is confirmed!`);
-        } else {
-            alert('Reservation canceled.');
-        }
+document.querySelectorAll('.reserve-btn').forEach((button) => {
+    button.addEventListener('click', function () {
+        const eventName = this.previousElementSibling.previousElementSibling.textContent.trim();
+        Swal.fire({
+            title: 'Reservation Sent!',
+            html: `<p>Ne ju kemi dërguar me email planin e rezervimit <strong>${eventName}</strong>.</p><p>Ju lutemi konfirmoni sa më shpejt që të jetë e mundur..</p>`,
+            icon: 'success',
+            confirmButtonText: 'OK',
+            confirmButtonColor: '#f39c12'
+        });
     });
 });
 
-document.getElementById('Menu').addEventListener('submit', event => {
+document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-    if (email && message) {
-        alert('Thank you for contacting us! We will respond shortly.');
-        document.getElementById('contactForm').reset();
-    } else {
-        alert('Please fill in all fields before submitting.');
-    }
+    Swal.fire({
+        title: 'Thank You!',
+        text: 'Thank you for the idea. We will get back to you shortly.',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#f39c12'
+    });
+    this.reset();
 });
